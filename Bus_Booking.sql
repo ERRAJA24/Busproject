@@ -1,0 +1,13 @@
+create database Buses;
+use Buses;
+create table Bus(SNo int primary key auto_increment,BusNo varchar(30),BusType varchar(30),Starts varchar(30),End varchar(30),Capacity int);
+insert into Bus values(1,"23","Ac","Chennai","Madurai",3);
+insert into Bus values(2,"28","NonAC","Coimbatore","Madurai",4);
+insert into Bus values(3,"24","Ac","Chennai","Trichy",5);
+insert into Bus values(4,"20","NonAc","Chennai","Madurai",4);
+insert into Bus values(5,"21","Ac","Chennai","Madurai",3);
+insert into Bus values(6,"26","Ac","Coimbatore","Madurai",3);
+insert into Bus values(7,"27","Ac","Coimbatore","Madurai",4);
+create table Passenger(Name varchar(20),Userbus int,dateoftravel Date,Seats int,BookingId int);
+select *from Passenger;
+drop table Passenger;
